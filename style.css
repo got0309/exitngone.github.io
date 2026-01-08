@@ -1,0 +1,105 @@
+/* style.css */
+body {
+    font-family: Arial, "굴림", Gulim, sans-serif;
+    font-size: 15px;
+
+    /* 핵심: 글자를 선명(딱딱)하게 만듦 */
+    font-smooth: never;
+    -webkit-font-smoothing: none; 
+    -moz-osx-font-smoothing: unset;
+    
+    /* 텍스트 렌더링 최적화 해제 */
+    text-rendering: optimizeSpeed;
+
+    background-color: #008080; /* 그 시절 윈도우 배경색 (Teal) */
+    color: white;
+    font-family: "돋움", dotum, sans-serif;
+
+    /* 무료 패턴 이미지 예시 (종이 질감 또는 우주) */
+    background-image: url('saya.jpg'); 
+    background-repeat: repeat; /* 이미지가 작아도 바둑판식으로 채워짐 */
+    background-attachment: fixed; /* 스크롤해도 배경은 고정되는 그 시절 기술! */
+    background-size: 200px auto;
+}
+
+marquee {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 0;
+    border-bottom: 2px solid #ffffff;
+}
+
+.main-content {
+    /* 1. 크기 및 위치 설정 */
+    width: 800px;           /* 적당한 본문 너비 */
+    margin: 30px auto;      /* 페이지 중앙 정렬 및 상단 여백 */
+    padding: 20px;          /* 안쪽 여백 */
+    
+    /* 2. 90년대 클래식 회색 배경 */
+    background-color: rgba(192, 192, 192, 0.9);
+
+    /* 3. 윈도우 95 스타일 입체 테두리 (핵심!) */
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #808080;
+    border-bottom: 3px solid #808080;
+
+    /* 4. 텍스트 설정 */
+    color: #000000;         /* 본문 글자는 검정색 */
+    text-align: left;       /* 내부 글자는 왼쪽 정렬 */
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.2); /* 살짝 그림자 추가 (선택) */
+}
+
+.blog {
+    /* 1. 크기 및 위치 설정 */
+    width: 800px;           /* 적당한 본문 너비 */
+    margin: 30px auto;      /* 페이지 중앙 정렬 및 상단 여백 */
+    padding: 20px;          /* 안쪽 여백 */
+    
+    /* 2. 90년대 클래식 회색 배경 */
+    background-color: rgba(192, 192, 192, 0.9);
+
+    /* 3. 윈도우 95 스타일 입체 테두리 (핵심!) */
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #808080;
+    border-bottom: 3px solid #808080;
+
+    /* 4. 텍스트 설정 */
+    color: #000000;         /* 본문 글자는 검정색 */
+    text-align: left;       /* 내부 글자는 왼쪽 정렬 */
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.2); /* 살짝 그림자 추가 (선택) */
+}
+
+/* 테이블이 왼쪽으로 치우치지 않게 처리 */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; /* 테이블 내부 글자는 왼쪽 정렬 (가독성) */
+}
+
+h1 {
+    color: #ffff00; /* 형광 노란색 */
+    text-shadow: 2px 2px #ff0000;
+}
+
+table {
+    border-collapse: collapse;
+    border: 3px double #ffffff;
+    color: black;
+}
+
+td {
+    padding: 10px;
+    border: 2px outset #ffffff; /* 버튼처럼 튀어나온 느낌 */
+}
+
+a {
+    color: blue;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: yellow;
+    color: red;
+}

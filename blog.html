@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> EXiT and G0NE - blo9 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <marquee scrollamount="5" behavior="alternate">
+    <span id="rainbow-text" style="font-size: 20pt; font-weight: bold;">
+        ★ if you read this, ★ ...thank you. ★
+        </span>
+    </marquee>
+
+    <center>
+        <h1>EXiT and G0NE</h1>
+        <img src="laindance.gif" alt="공사중 GIF 느낌"> 
+        <p>현재 페이지는 <b>공사중</b>입니다!</p>
+    </center>
+
+    <div class="blog">
+            <p><b>2026년 1월 8일 (목) - 날씨: 맑음</b></p>
+            <p>오늘입니다.<br>
+               내일이기도 합니다.</p>
+        </div>
+        
+        <div class="blog" style="margin-top: 20px;">
+            <p><b>2026년 1월 7일 (수) - 날씨: 흐림</b></p>
+            <p>어제입니다.<br>
+               오늘일수도 있습니다.</p>
+        </div>
+        
+        <center><a href="index.html" style="font-size: 20pt;">[ 돌아가기 ]</a></center>
+    </div>
+
+
+<script>
+    const rainbowText = document.getElementById('rainbow-text');
+    const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF', '#FF00FF', '#00FFFF'];
+
+    function changeColor() {
+        // 무작위 색상 선택
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        rainbowText.style.color = randomColor;
+        
+        // 외곽선 효과를 주면 더 90년대 느낌이 납니다
+        rainbowText.style.textShadow = "1px 1px #000000"; 
+    }
+
+    // 100밀리초(0.3초)마다 실행
+    setInterval(changeColor, 300);
+</script>
+</body>
+</html>
